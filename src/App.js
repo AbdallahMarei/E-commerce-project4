@@ -119,7 +119,7 @@ removeEverything = () => {
       <div className="App">
       <NavBar currentUser={this.state.currentUser} hidden={this.state.hidden} changeHiddenOnce={this.changeHiddenOnce} handleHidden={this.handleHidden} signOut={this.signOut} removeCompletely={this.removeCompletely}/>
       <Switch>
-        <Route exact path="/" >
+        <Route exact path="/E-commerce-project4" >
           <HomePage addToCart={this.addToCart} items={this.state.items} currentUser={this.state.currentUser} />
         </Route>
         <Route exact path="/shop" >
@@ -129,7 +129,7 @@ removeEverything = () => {
           <Profile currentUser={this.state.currentUser} />
         </Route>
         <Route exact path="/checkout" render={() => this.state.currentUser ? (<CheckoutPage removeEverything={this.removeEverything} addToCart={this.addToCart} removeItemFromCart={this.removeItemFromCart} removeCompletely={this.removeCompletely} currentUser={this.state.currentUser} />) : (<Redirect to="/" />) }  />
-        <Route exact path="/login" render={() => this.state.currentUser ? (<Redirect to="/" />) : (<SignInPage  handleCurrentUser={this.handleCurrentUser} />) }  />
+        <Route exact path="/login" render={() => this.state.currentUser ? (<Redirect to="/E-commerce-project4" />) : (<SignInPage  handleCurrentUser={this.handleCurrentUser} />) }  />
       </Switch>
       <Footer  />
     </div>
