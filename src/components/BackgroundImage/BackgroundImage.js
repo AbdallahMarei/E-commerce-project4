@@ -2,13 +2,14 @@ import React from "react";
 import "./BackgroundImage.css";
 import "bootstrap/dist/css/bootstrap.css";
 import {Link} from "react-router-dom"
+import Background from "../../assets/bg.jpg"
 
 function BackgroundImage() {
   return (
     <div>
       <div
         className="backgroundImage"
-        style={{ backgroundImage: "url(./images/bg.jpg)" }}
+        style={{ backgroundImage: `url(${Background})` }}
       >
         <span> Stylish & Trendy Hats!</span>
         <p>Check out our collection now</p>
