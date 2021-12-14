@@ -24,7 +24,7 @@ const HomePage = ({items,currentUser,addToCart}) => {
             </div>
             <About />
             <div className="video">
-            <YouTube />
+            {/* <YouTube /> */}
             </div>
             <Testimonials />
         </div>
